@@ -1063,7 +1063,7 @@ public class PhotoModule
             if (ApiHelper.HAS_SURFACE_TEXTURE && !mIsImageCaptureIntent
                     && mActivity.mShowCameraAppView) {
                 // Finish capture animation
-                ((CameraScreenNail) mActivity.mCameraScreenNail).animateSlide();
+                // ((CameraScreenNail) mActivity.mCameraScreenNail).animateSlide();
             }
             mFocusManager.updateFocusUI(); // Ensure focus indicator is hidden.
             if (!mIsImageCaptureIntent && !Util.enableZSL()) {

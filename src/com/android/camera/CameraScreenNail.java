@@ -316,8 +316,8 @@ public class CameraScreenNail extends SurfaceTextureScreenNail {
                     // onFrameAvailable will not be called. Animation state
                     // relies on onFrameAvailable.
                     surfaceTexture.updateTexImage();
-                    mSwitchAnimManager.drawDarkPreview(canvas, x, y, width,
-                            height, mAnimTexture);
+//                    mSwitchAnimManager.drawDarkPreview(canvas, x, y, width,
+//                            height, mAnimTexture);
                     break;
                 case ANIM_SWITCH_START:
                     mSwitchAnimManager.startAnimation();
@@ -334,12 +334,7 @@ public class CameraScreenNail extends SurfaceTextureScreenNail {
             if (mAnimState == ANIM_CAPTURE_RUNNING || mAnimState == ANIM_SWITCH_RUNNING) {
                 boolean drawn;
                 if (mAnimState == ANIM_CAPTURE_RUNNING) {
-                    if (!mFullScreen) {
-                        // Skip the animation if no longer in full screen mode
                         drawn = false;
-                    } else {
-                        drawn = mCaptureAnimManager.drawAnimation(canvas, this, mAnimTexture);
-                    }
                 } else {
                     drawn = mSwitchAnimManager.drawAnimation(canvas, x, y,
                             width, height, this, mAnimTexture);

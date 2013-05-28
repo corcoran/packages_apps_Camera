@@ -101,7 +101,6 @@ public class PhotoController extends PieController
                 CameraSettings.KEY_RECORD_LOCATION,
                 CameraSettings.KEY_POWER_SHUTTER,
                 CameraSettings.KEY_SMART_CAPTURE,
-                CameraSettings.KEY_TRUE_VIEW,
                 CameraSettings.KEY_STORAGE,
                 CameraSettings.KEY_PICTURE_SIZE,
                 CameraSettings.KEY_FOCUS_MODE,
